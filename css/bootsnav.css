@@ -3,9 +3,9 @@
 Template name : Bootsnav - Multi Purpose Header
 Categorie : Bootstrap Menu in CSS
 Author : adamnurdin01
-Version : v.1.1
+Version : v.1.2
 Created : 2016-06-02
-Last update : 2016-06-11
+Last update : 2016-10-19
 
 ============================================================== */
 
@@ -53,7 +53,9 @@ nav.navbar.bootsnav{
 
 nav.navbar.bootsnav ul.nav > li > a{
     color: #6f6f6f;
-    background-color: transparent !important;
+    background-color: transparent;
+    outline: none;
+    margin-bottom: -2px;
 }
 
 nav.navbar.bootsnav ul.nav li.megamenu-fw > a:hover,
@@ -65,7 +67,7 @@ nav.navbar.bootsnav ul.nav li.active > a{
 }
 
 nav.navbar.bootsnav .navbar-toggle{
-    background-color: #fff !important;
+    background-color: #fff;
     border: none;
     padding: 0;
     font-size: 18px;
@@ -195,13 +197,13 @@ nav.bootsnav.navbar-full .navbar-collapse ul.nav > li > a{
 }
 
 li.close-full-menu > a{
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 li.close-full-menu{
-    padding-top: 30px !important;
-    padding-bottom: 30px !important;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /* Atribute Navigation
@@ -304,7 +306,7 @@ ul.cart-list > li.total{
 
 ul.cart-list > li.total > .btn{
     display: inline-block;
-    border-bottom: solid 1px #efefef !important;
+    border-bottom: solid 1px #efefef;
 }
 
 ul.cart-list > li .price{
@@ -842,10 +844,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         left: 0;
         padding: 0  0 0 0 !important;
         background: #fff;
-        -moz-box-shadow: 1px 0px 1px 0px #eee;
-        -webkit-box-shadow: 1px 0px 1px 0px #eee;
-        -o-box-shadow: 1px 0px 1px 0px #eee;
-        box-shadow: 1px 0px 1px 0px #eee;
+        border-right: solid 1px #dfdfdf;
     }  
     
     nav.bootsnav.navbar-sidebar .scroller{

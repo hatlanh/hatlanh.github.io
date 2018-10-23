@@ -1,3 +1,14 @@
+// ------------------------------------------------------------------------------ //
+//
+// Template name : Bootsnav - Multi Purpose Header
+// Categorie : Bootstrap Menu in CSS
+// Author : adamnurdin01
+// Version : v.1.2
+// Created : 2016-06-02
+// Last update : 2016-10-19
+//
+// ------------------------------------------------------------------------------ //
+
 (function ($) {
 	"use strict";
     
@@ -31,9 +42,15 @@
                 var postsArr = new Array(),
                     index = $("nav.brand-center"),
                     $postsList = index.find('ul.navbar-nav');
-
+				
+				index.prepend("<span class='storage-name' style='display:none;'></span>");
+                
                 //Create array of all posts in lists
                 index.find('ul.navbar-nav > li').each(function(){
+					if( $(this).hasClass("active") ){
+						var getElement = $("a", this).eq(0).text();
+						$(".storage-name").html(getElement);
+					}
                     postsArr.push($(this).html());
                 });
                 
@@ -71,7 +88,12 @@
                     dropDown.closest("li").addClass("dropdown");
                     megaMenu.closest("li").addClass("megamenu-fw");
                 });
-            }
+				
+				var getName = $(".storage-name").html();
+				if( !getName == ""  ){
+					$( "ul.navbar-nav > li:contains('" + getName + "')" ).addClass("active");
+				}		
+            } 
             
             
             // ------------------------------------------------------------------------------ //
@@ -206,7 +228,7 @@
                 getIn = getNav.find("ul.nav").data("in"),
                 getOut = getNav.find("ul.nav").data("out");
             
-            if( getWindow < 981 ){
+            if( getWindow < 991 ){
                 
                 // Height of scroll navigation sidebar
                 $(".scroller").css("height", "auto");
@@ -309,7 +331,7 @@
                     });
                 });
 
-            }else if( getWindow > 981 ){
+            }else if( getWindow > 991 ){
                 // Height of scroll navigation sidebar
                 $(".scroller").css("height", getHeight + "px");
                 
@@ -557,11 +579,9 @@
     // Reset on resize
     $(window).on("resize", function(){   
         bootsnav.hoverDropdown();
-        
-        $(".top-search").slideUp();
         setTimeout(function(){
             bootsnav.navbarSticky();
-        }, 500); 
+        }, 500);
         
         // Toggle Bars
         $(".navbar-toggle").each(function(){
