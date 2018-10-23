@@ -3,7 +3,7 @@
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title>burger html5 landing page</title>
+        <title>Hạt Dinh Dưỡng Nhập Khẩu</title>
         <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <!-- Stylesheets -->
@@ -26,7 +26,7 @@
     </head>
     <body data-spy="scroll" data-target="#navbar-menu" data-offset="100">
 
-        <!-- Preloader --> 
+        <!-- Preloader  
         <div id="loading">
             <div id="loading-center">
                 <div id="loading-center-absolute">
@@ -42,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <!--End Preloader -->
+        End Preloader -->
         <!-- Navbar -->
         <nav class="navbar navbar-default bootsnav no-background navbar-fixed black">
             <div class="container">  
@@ -296,14 +296,13 @@
 
                     <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
                         <div class="subscribe">
-                            <h4>Subscribe now</h4>
-                            <p>Subscribe to the newsletter and
-                                get some crispy stuff every week.</p>
+                            <h4>Đăng ký nhận tin</h4>
+                            <p>Đăng ký nhận thông báo, khuyến mãi.</p>
 
                             <form role="form">
                                 <div class="form-group">
                                     <div class="input-group">
-                                        <input type="email" class="form-control" id="em" placeholder="Enter your e-mail here">
+                                        <input type="email" class="form-control" id="em" placeholder="Điền địa chỉ email của bạn">
                                         <span class="input-group-btn">
                                             <button type="submit" class="btn send_btn">
                                                 <i class="glyphicon glyphicon-send"></i>
@@ -318,13 +317,13 @@
 
                     <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
                         <div class="contact_us">
-                            <h4>Contact Us</h4>
-                            <a href="">info@junkyburget.com</a>
+                            <h4>Liên hệ</h4>
+                            <a href="">hatlanh18@gmail.com</a>
 
                             <address>
-                                Jalan Awan Hijau, Taman OUG<br />
-                                58200 Kuala Lumpur <br />
-                                Malaysia <br />
+                                E8 ngõ 16, đường Ngô Quyền, Quang Trung<br />
+                                Hà Đông, Hà Nội <br />
+                                Việt Nam <br />
                             </address>
                         </div>
                     </div>
@@ -341,11 +340,11 @@
 
                             <div class="footer-copyright">
                                 <p class="wow fadeInRight" data-wow-duration="1s">
-                                    Made with 
+                                    Phát triển  
                                     <i class="fa fa-heart"></i>
-                                    by 
-                                    <a target="_blank" href="http://bootstrapthemes.co">Bootstrap Themes</a> <br /> 
-                                    2016. All Rights Reserved
+                                    bởi 
+                                    <a target="_blank" href="https://phamthangnd.github.io">JPham</a> <br /> 
+                                    2018. Giữ Bản quyền
                                 </p>
                             </div>					
                         </div>
@@ -376,14 +375,14 @@
             $(document).ready(function () {
                 map = new GMaps({
                     el: '#ourmaps',
-                    lat: 3.139003,
-                    lng: 101.686855,
+                    lat: 20.9721271,
+                    lng: 105.7659921,
                     scrollwheel: false
                 });
 
                 //locations request
                 map.getElevations({
-                    locations: [[3.139003, 101.686855]],
+                    locations: [[20.9721271,105.7659921]],
                     callback: function (result, status) {
                         if (status == google.maps.ElevationStatus.OK) {
                             for (var i in result) {
@@ -391,7 +390,7 @@
                                     lat: result[i].location.lat(),
                                     lng: result[i].location.lng(),
                                     infoWindow: {
-                                        content: '<address class="tooltip_address"><b>Junky Burger</b><br />Jalan Awan Hijau, Taman OUG<br />58200 Kuala Lumpur <br />Malaysia <br /></address>'
+                                        content: '<address class="tooltip_address"><b>Hạt Lành</b><br />E8, ngõ 16, Ngô Quyền, Quang Trung<br />Hà Đông, Hà Nội <br />Việt Nam <br /></address>'
                                     }
                                 });
                             }
