@@ -320,8 +320,8 @@ html[xmlns] .slides {display: block;}
 .top_slider .slide1 .flex_caption1 {
 	position:absolute;
 	z-index:30;
-	left:50%;
-	top:45%;
+	left:66%;
+	top:40%;
 	width:100%;
 	margin-left:-585px;
 	color:#333;
