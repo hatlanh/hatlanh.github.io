@@ -716,7 +716,7 @@ ul.project_info li span {color:#979797;}
 .project_shared a:hover {border-color:#333; color:#333;}
 
 /* __________ Our Clients __________ */
-.our_clients {padding:71px 0 78px;}
+.our_clients {padding:71px 0 78px; display: hidden !important;}
 
 .our_clients .client_img {
 	opacity:0.5;
