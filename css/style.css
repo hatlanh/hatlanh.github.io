@@ -716,7 +716,7 @@ ul.project_info li span {color:#979797;}
 .project_shared a:hover {border-color:#333; color:#333;}
 
 /* __________ Our Clients __________ */
-.our_clients {padding:71px 0 78px; display: hidden !important;}
+.our_clients {padding:71px 0 78px; display: none !important;}
 
 .our_clients .client_img {
 	opacity:0.5;
@@ -729,6 +729,7 @@ ul.project_info li span {color:#979797;}
 /*	OUR TEAM
 /*-----------------------------------------------------------------------------------*/
 #team {
+	display: none !important;
 	padding:75px 0 100px;
 	background-image:url(../images/team_bg.jpg);
 	background-size:cover;
